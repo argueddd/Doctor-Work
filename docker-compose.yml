@@ -1,0 +1,72 @@
+version: '3.5'
+
+services:
+  etcd:
+    image: bitnami/etcd:latest
+    container_name: etcd
+    environment:
+      - BITNAMI_DEBUG=true
+      - ETCD_AUTO_COMPACTION_RETENTION=1
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ALLOW_NONE_AUTHENTICATION=yes
+      - ETCD_ADVERTISE_CLIENT_URLS=http://0.0.0.0:2379
+      - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+      - ETCD_INITIAL_ADVERTISE_PEER_URLS=http://0.0.0.0:2380
+      - ETCD_LISTEN_PEER_URLS=http://0.0.0.0:2380
+      - ETCD_NAME=etcd0
+      - ETCD_INITIAL_CLUSTER=etcd0=http://0.0.0.0:2380
+      - ETCD_INITIAL_CLUSTER_STATE=new
+    networks:
+      - milvus-network
+    ports:
+      - "2379:2379"
+      - "2380:2380"
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    environment:
+      MINIO_ACCESS_KEY: "minioadmin"
+      MINIO_SECRET_KEY: "minioadmin"
+    networks:
+      - milvus-network
+    ports:
+      - "9000:9000"
+    command: server /data
+
+  milvus:
+    image: milvusdb/milvus:latest
+    container_name: milvus
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: "etcd:2379"
+      MINIO_ADDRESS: "minio:9000"
+      MINIO_ACCESS_KEY: "minioadmin"
+      MINIO_SECRET_KEY: "minioadmin"
+      MINIO_USE_SSL: "false"
+      DATA_PATH: "/var/lib/milvus"
+    networks:
+      - milvus-network
+    ports:
+      - "19530:19530"
+      - "8080:8080"
+    depends_on:
+      - etcd
+      - minio
+
+  attu:
+    image: zilliz/attu:latest
+    container_name: attu
+    ports:
+      - "3000:3000"
+    depends_on:
+      - milvus
+    networks:
+      - milvus-network
+    environment:
+      MILVUS_URL: milvus:19530
+
+
+networks:
+  milvus-network:
+    driver: bridge
