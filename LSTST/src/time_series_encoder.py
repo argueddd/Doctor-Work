@@ -1,7 +1,9 @@
 import torch.nn as nn
 
-from LSTST.src.RealTimePositionalEncoding import RealTimePositionalEncoding
-from LSTST.src.TimeSeriesPatchEmbedding import TimeSeriesPatchEmbedding
+from src.modules.wireless_optimization_agent.short_evaluation.lstst.real_time_positional_encoding import \
+    RealTimePositionalEncoding
+from src.modules.wireless_optimization_agent.short_evaluation.lstst.time_series_patch_embedding import \
+    TimeSeriesPatchEmbedding
 
 
 class TimeSeriesEncoder(nn.Module):

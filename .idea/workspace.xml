@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="622624c5-b046-4c34-9a4a-09968480a5cc" name="Changes" comment="feat: create stream chat">
-      <change afterPath="$PROJECT_DIR$/LSTST/src/LanguageScaffoldBuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTST/src/RealTimePositionalEncoding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTST/src/ScaffoldTokenizerWrapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTST/src/TimeSeriesEncoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTST/src/TimeSeriesPatchEmbedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LSTST/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PatchEmbedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vectordb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="622624c5-b046-4c34-9a4a-09968480a5cc" name="Changes" comment="feat: create stream chat" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,27 +29,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LanguageScaffoldBuilder.executor": "Run",
-    "Python.PatchEmbedding.executor": "Run",
-    "Python.ScaffoldTokenizerWrapper.executor": "Run",
-    "Python.chatModel.executor": "Debug",
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.vectordb.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/PyProjects/rag-demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LanguageScaffoldBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PatchEmbedding.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ScaffoldTokenizerWrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chatModel.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vectordb.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PyProjects/rag-demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.ScaffoldTokenizerWrapper">
     <configuration name="LanguageScaffoldBuilder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="rag-demo" />
@@ -193,8 +179,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
-        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.428" />
+        <option value="bundled-python-sdk-80e8e15d2b92-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.428" />
       </set>
     </attachedChunks>
   </component>
@@ -216,6 +202,7 @@
       <workItem from="1722325204802" duration="367000" />
       <workItem from="1744721384921" duration="772000" />
       <workItem from="1744728327664" duration="2961000" />
+      <workItem from="1744766111411" duration="649000" />
     </task>
     <servers />
   </component>

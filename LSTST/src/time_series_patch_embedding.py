@@ -2,18 +2,17 @@ import torch.nn as nn
 
 
 class TimeSeriesPatchEmbedding(nn.Module):
-    def __init__(self, input_dim, d_model, kernel_size, stride, padding):
+    def __init__(self, input_dim, d_model, kernel_size, stride):
         super().__init__()
         self.conv1d = nn.Conv1d(
             in_channels=input_dim,
             out_channels=d_model,
             kernel_size=kernel_size,
             stride=stride,
-            padding=padding
+
         )
         self.kernel_size = kernel_size
         self.stride = stride
-        self.padding = padding
 
     def forward(self, x):
         # x: (B, L, M)
